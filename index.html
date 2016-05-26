@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>April and Lucy's Super Cool Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please fill out our super cool survey!!!</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">What's your name?</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <h2>What's your favorite color?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="red" checked>
+              Red
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="orange" checked>
+              Orange
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="yellow" checked>
+              Yellow
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="green" checked>
+              Green
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="blue" checked>
+              Blue
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="purple" checked>
+              Purple
+            </label>
+          </div>
+
+          <h2>What's your favorite genre of music from the drop-down options?</h2>
+          <select class="form-control" id="music">
+            <option value="classic-rock">Classic Rock</option>
+            <option value="alternative-rock">Alternative Rock</option>
+            <option value="country">Country</option>
+            <option value="pop">Pop</option>
+            <option value="edm">EDM</option>
+            <option value="rnb">R&B</option>
+            <option value="hip-hop">Hip Hop</option>
+            <option value="jazz">Jazz/Classical</option>
+          </select>
+
+          <button type="submit" class="btn">What do you know about me!</button>
+
+        </form>
+      </div>
+
+      <div id="survey">
+        <h1>Thanks for taking our survey! Here's what we now know about YOU!!</h1>
+        <p>Your name is: <span class="name"></span> and you like <span class="color"></span> most out of all the colors in our rainbow. <span class="music"></span> is what you prefer to jam to when stuck in terrible traffic to Beaverton.</p>
+      </div>
+
+    </div>
+  </body>
+</html>
