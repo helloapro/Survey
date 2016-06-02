@@ -10,12 +10,17 @@
   </head>
   <body>
     <div class="container">
-      <h1>Please fill out our super cool survey!!!</h1>
+      <h1>Please fill out our <em>super</em> <strong>cool</strong> survey - </h1>
       <div id="blanks">
         <form>
           <div class="form-group">
             <label for="name">What's your name?</label>
             <input id="name" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="date">What's your birthdate?</label>
+            <input id="date" class="form-control" type="date">
           </div>
 
           <h2>What's your favorite color?</h2>
@@ -27,57 +32,56 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color" value="orange" checked>
+              <input type="radio" name="color" value="Orange" checked>
               Orange
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color" value="yellow" checked>
+              <input type="radio" name="color" value="Yellow" checked>
               Yellow
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color" value="green" checked>
+              <input type="radio" name="color" value="Green" checked>
               Green
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color" value="blue" checked>
+              <input type="radio" name="color" value="Blue" checked>
               Blue
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color" value="purple" checked>
+              <input type="radio" name="color" value="Purple" checked>
               Purple
             </label>
           </div>
 
           <h2>What's your favorite genre of music from the drop-down options?</h2>
           <select class="form-control" id="music">
-            <option value="classic-rock">Classic Rock</option>
-            <option value="alternative-rock">Alternative Rock</option>
-            <option value="country">Country</option>
-            <option value="pop">Pop</option>
-            <option value="edm">EDM</option>
-            <option value="rnb">R&B</option>
-            <option value="hip-hop">Hip Hop</option>
-            <option value="jazz">Jazz/Classical</option>
+            <option value="Classic Rock">Classic Rock</option>
+            <option value="Alternative Rock">Alternative Rock</option>
+            <option value="Country">Country</option>
+            <option value="Pop">Pop</option>
+            <option value="EDM">EDM</option>
+            <option value="R&B">R&B</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="Jazz/Classical">Jazz/Classical</option>
           </select>
 
-          <button type="submit" class="btn">What do you know about me!</button>
+          <button type="submit" class="btn btn-success">What do you know about me?</button>
 
         </form>
-      </div>
 
-      <div id="survey">
-        <h1>Thanks for taking our survey! Here's what we now know about YOU!!</h1>
-        <p>Your name is: <span class="name"></span> and you like <span class="color"></span> most out of all the colors in our rainbow. <span class="music"></span> is what you prefer to jam to when stuck in terrible traffic to Beaverton.</p>
+        <div id="survey">
+          <h1>Thanks for taking our survey! Here's what we now know about you!</h1>
+          <p>Your name is: <span class="name"></span> and you were born <span class="date"></span>. You like <span class="color"></span> most out of all the colors in our rainbow, and <span class="music"></span> is what you prefer to jam to when stuck in terrible traffic.</p>
+        </div>
       </div>
-
     </div>
   </body>
 </html>
